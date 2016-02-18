@@ -1,0 +1,98 @@
+/***************************************************
+PRIMARY HERO
+************************************************** */
+.hero {
+  padding: 80px 0;
+  background: url("../img/hero.png") no-repeat center center fixed;
+  background-size: cover;
+
+  @include breakpoint(medium) {
+    padding: 80px;
+  }
+
+  @include breakpoint(large) {
+    padding: 160px;
+  }
+
+  h1, h5 {
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+
+    &.all-caps {
+      text-transform: uppercase;
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+  .hero-button {
+    position:relative;
+    width: 60%;
+    display:inline-block;
+    text-decoration:none;
+    border-radius:5px;
+    border:solid 1px #00A382;
+    text-align:center;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding:16px 18px 14px;
+    margin: 12px;
+    font-family: 'Gotham', $body-font-family;
+
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
+
+      -webkit-box-shadow: 0px 6px 0px #00A382;
+      -moz-box-shadow: 0px 6px 0px #00A382;
+      box-shadow: 0px 6px 0px #00A382;
+
+    &:hover {
+      -webkit-box-shadow: 0px 2px 0px #00A382;
+      -moz-box-shadow: 0px 2px 0px #00A382;
+      box-shadow: 0px 2px 0px #00A382;
+      position:relative;
+      top:4px;
+    }
+  }
+}
+
+/***************************************************
+SECONDARY HERO
+************************************************** */
+.secondary-hero {
+  padding: 40px 0;
+  background: url("../img/secondary-hero2.png") no-repeat center center fixed;
+  background-size: cover;
+
+  @include breakpoint(medium) {
+    padding: 80px;
+  }
+
+  @include breakpoint(large) {
+    padding: 150px;
+  }
+
+  h1, h5 {
+    color: $white;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+
+    &.all-caps {
+      text-transform: uppercase;
+      border-bottom: 1px solid #fff;
+    }
+  }
+
+  .hero-button {
+    border-radius: 8px;
+    width: 60%;
+    border-bottom: 3px solid #00A382;
+
+    &:hover {
+      border-bottom: none;
+    }
+  }
+}

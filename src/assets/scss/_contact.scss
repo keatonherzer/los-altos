@@ -1,0 +1,46 @@
+/***************************************************
+Contact Section
+************************************************** */
+.form {
+  padding: 40px 0 80px 0;
+
+  .underline-header {
+    margin: 30px 0;
+  }
+  input {
+    padding: 20px 5px;
+  }
+
+  textarea {
+    min-height: 200px;
+  }
+
+  .send-message-btn {
+    position:relative;
+    width: 50%;
+    display:inline-block;
+    text-decoration:none;
+    border-radius:5px;
+    border:solid 1px #00A382;
+    text-align:center;
+    font-weight: bold;
+    padding:16px 18px 14px;
+    font-family: 'Gotham', $body-font-family;
+
+    -webkit-transition: all 0.1s;
+    -moz-transition: all 0.1s;
+    transition: all 0.1s;
+
+    -webkit-box-shadow: 0px 6px 0px #00A382;
+    -moz-box-shadow: 0px 6px 0px #00A382;
+    box-shadow: 0px 6px 0px #00A382;
+
+    &:hover {
+      -webkit-box-shadow: 0px 2px 0px #00A382;
+      -moz-box-shadow: 0px 2px 0px #00A382;
+      box-shadow: 0px 2px 0px #00A382;
+      position:relative;
+      top:4px;
+    }
+  }
+}
